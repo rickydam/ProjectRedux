@@ -10,7 +10,7 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            possibleFriends: ['Husky', 'Chihuahua', 'Beagle'],
+            possibleFriends: [],
             currentFriends: []
         };
     }
