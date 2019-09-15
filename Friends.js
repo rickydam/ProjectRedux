@@ -1,8 +1,8 @@
-import React from "react";
-import {StyleSheet, Text, View, Button} from "react-native";
-import {connect} from "react-redux";
-import {bindActionCreators} from "redux";
-import {addFriend} from "./FriendActions";
+import React from 'react';
+import {StyleSheet, Text, View, Button} from 'react-native';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {addFriend} from './FriendActions';
 
 class Friends extends React.Component {
     render() {
@@ -19,8 +19,8 @@ class Friends extends React.Component {
                     ))
                 }
                 <Button
-                    title="Back to home"
-                    onPress={() => this.props.navigation.navigate("Home")}
+                    title='Back to home'
+                    onPress={() => this.props.navigation.navigate('Home')}
                 />
             </View>
         );
@@ -30,9 +30,9 @@ class Friends extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FFFFFF",
-        alignItems: "center",
-        justifyContent: "center"
+        backgroundColor: '#FFFFFF',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });
 

@@ -1,13 +1,13 @@
 import {combineReducers} from 'redux';
-import {ADD_FRIEND} from "./types";
+import {ADD_FRIEND} from './types';
 
 const INITIAL_STATE = {
     current: [],
     possible: [
-        "Husky",
-        "Chihuahua",
-        "Beagle",
-        "Yorkie"
+        'Husky',
+        'Chihuahua',
+        'Beagle',
+        'Yorkie'
     ]
 };
 

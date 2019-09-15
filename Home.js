@@ -1,6 +1,6 @@
-import React from "react";
-import {StyleSheet, Text, View, Button} from "react-native";
-import {connect} from "react-redux";
+import React from 'react';
+import {StyleSheet, Text, View, Button} from 'react-native';
+import {connect} from 'react-redux';
 
 class Home extends React.Component {
     render() {
@@ -8,8 +8,8 @@ class Home extends React.Component {
             <View style={styles.container}>
                 <Text>We have {this.props.friends.current.length} friends!</Text>
                 <Button
-                    title="Add some friends"
-                    onPress={() => this.props.navigation.navigate("Friends")}
+                    title='Add some friends'
+                    onPress={() => this.props.navigation.navigate('Friends')}
                 />
             </View>
         );
@@ -19,9 +19,9 @@ class Home extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#FFFFFF",
-        alignItems: "center",
-        justifyContent: "center"
+        backgroundColor: '#FFFFFF',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });
 

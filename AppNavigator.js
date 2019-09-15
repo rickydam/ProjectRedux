@@ -1,4 +1,4 @@
-import {createAppContainer, createStackNavigator} from "react-navigation";
+import {createAppContainer, createStackNavigator} from 'react-navigation';
 import Home from './Home';
 import Friends from './Friends';
 
