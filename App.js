@@ -15,22 +15,10 @@ export default class App extends React.Component {
         };
     }
 
-    addFriend = (index) => {
-        const {currentFriends, possibleFriends} = this.state;
-        const addedFriend = possibleFriends.splice(index, 1); // Pull friend out of possibleFriends
-        currentFriends.push(addedFriend); // And put friend in currentFriends
-        this.setState({currentFriends, possibleFriends}); // Finally, update our app state
-    };
-
     render() {
         return (
             <Provider store={store}>
                 <AppNavigator
-                    screenProps={{
-                        currentFriends: this.state.currentFriends,
-                        possibleFriends: this.state.possibleFriends,
-                        addFriend: this.addFriend
-                    }}
                 />
             </Provider>
         );
